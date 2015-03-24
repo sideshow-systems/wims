@@ -1,0 +1,11 @@
+.htaccess
+.DS_Store
+.project
+._*
+.externalToolBuilders
+!.placeholder
+.vagrant
+logs/*
+vendor/*
+translation/*.mo
+

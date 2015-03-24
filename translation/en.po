@@ -1,0 +1,41 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WIMS 0.1\n"
+"POT-Creation-Date: 2015-03-24 13:54+0100\n"
+"PO-Revision-Date: 2015-03-24 13:54+0100\n"
+"Last-Translator: Florian Binder <fb@sideshow-systems.de>\n"
+"Language-Team: Florian Binder <fb@sideshow-systems.de>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: /Users/florianbinder/Documents/Eclipse/workspace/Sandbox/"
+"wims/\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: public\n"
+
+#: public/index.php:18 public/index.php:41
+msgid "Application Name"
+msgstr "WIMS"
+
+#: public/index.php:41
+msgid "Application Name Description"
+msgstr "What Is Your Setup?"
+
+#: public/index.php:43
+msgid "Infotext lead"
+msgstr "Infotext goes here..."
+
+#~ msgid "Sample String 1"
+#~ msgstr "EN 1"
+
+#~ msgid "Sample String 2"
+#~ msgstr "EN 2"
+
+#~ msgid "Sample String 3"
+#~ msgstr "EN 3"
+
+#~ msgid "Sample String 4"
+#~ msgstr "EN 4"
