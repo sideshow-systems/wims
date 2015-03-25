@@ -22,6 +22,7 @@ $translate = new Zend_Translate(
 
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/misc/css/master.css">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,7 +37,7 @@ $translate = new Zend_Translate(
 		<![endif]-->
 
 		<div class="container">
-			<?php //Zend_Debug::dump($_SERVER); ?>
+			<?php //print_r($_SERVER); ?>
 			<div class="row">
 				<div class="col-md-12">
 					<div class="page-header">
@@ -46,28 +47,105 @@ $translate = new Zend_Translate(
 				</div>
 			</div>
 
+			<br />
+
 			<div class="row">
 				<div class="col-md-12">
-					<div class="input-group input-group-lg">
-						<span class="input-group-addon" id="sizing-addon1">@</span>
-						<input type="text" class="form-control" placeholder="<?php echo $translate->_("Emailform Placeholdertext"); ?>" aria-describedby="sizing-addon1">
-					</div>
+					<form>
+						<div class="input-group input-group-lg">
+							<span class="input-group-addon" id="sizing-addon1">@</span>
+							<input type="text" class="form-control" placeholder="<?php echo $translate->_("Emailform Placeholder Text"); ?>" aria-describedby="sizing-addon1">
+							<span class="input-group-btn">
+								<button class="btn btn-primary" type="button"><?php echo $translate->_("Emailform Sendbutton Text"); ?></button>
+							</span>
+						</div>
+					</form>
 				</div>
 			</div>
 			<br /><br />
 
 			<div class="row">
-				<div class="col-md-4">
-					<div class="infobox" style="border: 1px solid #ccc; height: 200px;">
-						your public ip address: <?php echo $_SERVER['REMOTE_ADDR']; ?>
+				<!-- Current Viewport -->
+				<div id="ib_current-viewport" class="infobox col-md-3 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<div class="img_container text-center">
+							<img src="http://lorempixum.com/400/250" class="img-responsive" />
+							<p class="infotext"><?php echo $translate->_("Box Desc Loading Placeholder"); ?></p>
+						</div>
+						<div class="caption text-center">
+							<h5><?php echo $translate->_("Box Desc Current Viewport"); ?></h5>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="infobox" style="border: 1px solid #ccc; height: 200px;">
-						your user agent: <?php echo $_SERVER['HTTP_USER_AGENT']; ?>
+				
+				<!-- Available Windowsize -->
+				<div id="ib_available-windowsize" class="infobox col-md-3 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<div class="img_container text-center">
+							<img src="http://lorempixum.com/400/250" class="img-responsive" />
+							<p class="infotext"><?php echo $translate->_("Box Desc Loading Placeholder"); ?></p>
+						</div>
+						<div class="caption text-center">
+							<h5><?php echo $translate->_("Box Desc Available Windowsize"); ?></h5>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Color Depth -->
+				<div id="ib_color-depth" class="infobox col-md-3 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<div class="img_container text-center">
+							<img src="http://lorempixum.com/400/250" class="img-responsive" />
+							<p class="infotext"><?php echo $translate->_("Box Desc Loading Placeholder"); ?></p>
+						</div>
+						<div class="caption text-center">
+							<h5><?php echo $translate->_("Box Desc Color Depth"); ?></h5>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Cookies Enabled -->
+				<div id="ib_cookies-enabled" class="infobox col-md-3 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<div class="img_container text-center">
+							<img src="http://lorempixum.com/400/250" class="img-responsive" />
+							<p class="infotext"><?php echo $translate->_("Box Desc Loading Placeholder"); ?></p>
+						</div>
+						<div class="caption text-center">
+							<h5><?php echo $translate->_("Box Desc Cookies Enabled"); ?></h5>
+						</div>
 					</div>
 				</div>
 			</div>
+			
+			<div class="row">
+				<!-- User Agent -->
+				<div id="ib_user-agent" class="infobox col-md-3 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<div class="img_container text-center">
+							<img src="http://lorempixum.com/400/250" class="img-responsive" />
+							<p class="infotext"><?php echo $_SERVER['HTTP_USER_AGENT']; ?></p>
+						</div>
+						<div class="caption text-center">
+							<h5><?php echo $translate->_("Box Desc User Agent"); ?></h5>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Operating System -->
+				<div id="ib_operating-system" class="infobox col-md-3 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<div class="img_container text-center">
+							<img src="http://lorempixum.com/400/250" class="img-responsive" />
+							<p class="infotext"><?php echo $translate->_("Box Desc Loading Placeholder"); ?></p>
+						</div>
+						<div class="caption text-center">
+							<h5><?php echo $translate->_("Box Desc Operating System"); ?></h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

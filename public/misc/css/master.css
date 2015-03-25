@@ -1,0 +1,18 @@
+/** master less styles **/
+.infobox .img_container {
+  position: relative;
+}
+.infobox .img_container img {
+  opacity: 0.4;
+}
+.infobox .img_container .infotext {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+}
+.infobox .caption {
+  padding: 0px 9px;
+}
+.infobox .wims-icon {
+  font-size: 30px;
+}
