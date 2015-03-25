@@ -8,4 +8,4 @@
 logs/*
 vendor/*
 translation/*.mo
-
+nbproject/*

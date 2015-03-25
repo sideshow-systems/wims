@@ -70,7 +70,9 @@ $translate = new Zend_Translate(
 					<div class="thumbnail">
 						<div class="img_container text-center">
 							<img src="http://lorempixum.com/400/250" class="img-responsive" />
-							<p class="infotext"><?php echo $translate->_("Box Desc Loading Placeholder"); ?></p>
+							<p class="infotext">
+								<span class="inner"><?php echo $translate->_("Box Desc Loading Placeholder"); ?></span>
+							</p>
 						</div>
 						<div class="caption text-center">
 							<h5><?php echo $translate->_("Box Desc Current Viewport"); ?></h5>
@@ -82,8 +84,10 @@ $translate = new Zend_Translate(
 				<div id="ib_available-windowsize" class="infobox col-md-3 col-sm-6 col-xs-6">
 					<div class="thumbnail">
 						<div class="img_container text-center">
-							<img src="http://lorempixum.com/400/250" class="img-responsive" />
-							<p class="infotext"><?php echo $translate->_("Box Desc Loading Placeholder"); ?></p>
+							<img src="/misc/pics/boxbg_screen-resolution.png" class="img-responsive" />
+							<p class="infotext">
+								<span class="inner"><?php echo $translate->_("Box Desc Loading Placeholder"); ?></span>
+							</p>
 						</div>
 						<div class="caption text-center">
 							<h5><?php echo $translate->_("Box Desc Available Windowsize"); ?></h5>
@@ -96,7 +100,9 @@ $translate = new Zend_Translate(
 					<div class="thumbnail">
 						<div class="img_container text-center">
 							<img src="http://lorempixum.com/400/250" class="img-responsive" />
-							<p class="infotext"><?php echo $translate->_("Box Desc Loading Placeholder"); ?></p>
+							<p class="infotext">
+								<span class="inner"><?php echo $translate->_("Box Desc Loading Placeholder"); ?></span>
+							</p>
 						</div>
 						<div class="caption text-center">
 							<h5><?php echo $translate->_("Box Desc Color Depth"); ?></h5>
@@ -108,8 +114,10 @@ $translate = new Zend_Translate(
 				<div id="ib_cookies-enabled" class="infobox col-md-3 col-sm-6 col-xs-6">
 					<div class="thumbnail">
 						<div class="img_container text-center">
-							<img src="http://lorempixum.com/400/250" class="img-responsive" />
-							<p class="infotext"><?php echo $translate->_("Box Desc Loading Placeholder"); ?></p>
+							<img src="/misc/pics/boxbg_cookie.png" class="img-responsive" />
+							<p class="infotext">
+								<span class="inner"><?php echo $translate->_("Box Desc Loading Placeholder"); ?></span>
+							</p>
 						</div>
 						<div class="caption text-center">
 							<h5><?php echo $translate->_("Box Desc Cookies Enabled"); ?></h5>
@@ -124,7 +132,9 @@ $translate = new Zend_Translate(
 					<div class="thumbnail">
 						<div class="img_container text-center">
 							<img src="http://lorempixum.com/400/250" class="img-responsive" />
-							<p class="infotext"><?php echo $_SERVER['HTTP_USER_AGENT']; ?></p>
+							<p class="infotext">
+								<span class="inner"><?php echo $_SERVER['HTTP_USER_AGENT']; ?></span>
+							</p>
 						</div>
 						<div class="caption text-center">
 							<h5><?php echo $translate->_("Box Desc User Agent"); ?></h5>
@@ -137,7 +147,9 @@ $translate = new Zend_Translate(
 					<div class="thumbnail">
 						<div class="img_container text-center">
 							<img src="http://lorempixum.com/400/250" class="img-responsive" />
-							<p class="infotext"><?php echo $translate->_("Box Desc Loading Placeholder"); ?></p>
+							<p class="infotext">
+								<span class="inner"><?php echo $translate->_("Box Desc Loading Placeholder"); ?></span>
+							</p>
 						</div>
 						<div class="caption text-center">
 							<h5><?php echo $translate->_("Box Desc Operating System"); ?></h5>

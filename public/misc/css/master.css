@@ -3,12 +3,21 @@
   position: relative;
 }
 .infobox .img_container img {
-  opacity: 0.4;
+  opacity: 0.5;
 }
 .infobox .img_container .infotext {
   position: absolute;
-  top: 45%;
+  top: 30%;
   width: 100%;
+  font-size: 14px;
+}
+.infobox .img_container .infotext .inner {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  min-width: 50%;
+  max-width: 80%;
+  border-radius: 3px;
 }
 .infobox .caption {
   padding: 0px 9px;
