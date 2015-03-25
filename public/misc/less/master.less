@@ -1,11 +1,22 @@
 /** master less styles **/
 
+@color_sbg_main: #eeeeee; //#606dbc;
+@color_sbg_second: lighten(@color_sbg_main, 10%); // #465298;
+
 .infobox {
 	.img_container {
 		position: relative;
+		//background: rgba(150,150,150,0.4);
+		background: repeating-linear-gradient(
+			45deg,
+			@color_sbg_main,
+			@color_sbg_main 10px,
+			@color_sbg_second 10px,
+			@color_sbg_second 20px
+		);
 
 		img {
-			opacity: 0.5;
+			opacity: 0.8;
 		}
 		.infotext {
 			position: absolute;
@@ -20,6 +31,7 @@
 				min-width: 50%;
 				max-width: 80%;
 				border-radius: 3px;
+				border: 1px solid rgba(100,100,100,0.5);
 			}
 		}
 	}

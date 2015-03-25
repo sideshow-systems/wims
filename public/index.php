@@ -69,7 +69,7 @@ $translate = new Zend_Translate(
 				<div id="ib_current-viewport" class="infobox col-md-3 col-sm-6 col-xs-6">
 					<div class="thumbnail">
 						<div class="img_container text-center">
-							<img src="http://lorempixum.com/400/250" class="img-responsive" />
+							<img src="/misc/pics/boxbg_current-viewport.png" class="img-responsive" />
 							<p class="infotext">
 								<span class="inner"><?php echo $translate->_("Box Desc Loading Placeholder"); ?></span>
 							</p>
@@ -99,7 +99,7 @@ $translate = new Zend_Translate(
 				<div id="ib_color-depth" class="infobox col-md-3 col-sm-6 col-xs-6">
 					<div class="thumbnail">
 						<div class="img_container text-center">
-							<img src="http://lorempixum.com/400/250" class="img-responsive" />
+							<img src="/misc/pics/boxbg_color-depth.png" class="img-responsive" />
 							<p class="infotext">
 								<span class="inner"><?php echo $translate->_("Box Desc Loading Placeholder"); ?></span>
 							</p>
@@ -131,7 +131,7 @@ $translate = new Zend_Translate(
 				<div id="ib_user-agent" class="infobox col-md-3 col-sm-6 col-xs-6">
 					<div class="thumbnail">
 						<div class="img_container text-center">
-							<img src="http://lorempixum.com/400/250" class="img-responsive" />
+							<img src="/misc/pics/boxbg_user-agent.png" class="img-responsive" />
 							<p class="infotext">
 								<span class="inner"><?php echo $_SERVER['HTTP_USER_AGENT']; ?></span>
 							</p>
@@ -146,7 +146,7 @@ $translate = new Zend_Translate(
 				<div id="ib_operating-system" class="infobox col-md-3 col-sm-6 col-xs-6">
 					<div class="thumbnail">
 						<div class="img_container text-center">
-							<img src="http://lorempixum.com/400/250" class="img-responsive" />
+							<img src="/misc/pics/boxbg_operating-system.png" class="img-responsive" />
 							<p class="infotext">
 								<span class="inner"><?php echo $translate->_("Box Desc Loading Placeholder"); ?></span>
 							</p>
