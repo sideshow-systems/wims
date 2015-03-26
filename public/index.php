@@ -161,6 +161,45 @@ $browser = new Browser();
 						</div>
 					</div>
 				</div>
+				
+				<!-- Browser -->
+				<div id="ib_browser" class="infobox col-md-3 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<div class="img_container text-center">
+							<?php
+							$browserBgImage = 'default';
+							switch ($browser->getBrowser()) {
+								case Browser::BROWSER_FIREFOX:
+									$browserBgImage = 'firefox';
+									break;
+								case Browser::BROWSER_OPERA:
+									$browserBgImage = 'opera';
+									break;
+								case Browser::BROWSER_IE:
+									$browserBgImage = 'ie';
+									break;
+								case Browser::BROWSER_SAFARI:
+									$browserBgImage = 'safari';
+									break;
+								case Browser::BROWSER_CHROME:
+									$browserBgImage = 'chrome';
+									break;
+								
+									
+								default:
+									break;
+							}
+							?>
+							<img src="/misc/pics/boxbg_browser-<?php echo $browserBgImage; ?>.png" class="img-responsive" />
+							<p class="infotext">
+								<span class="inner"><?php echo $browser->getBrowser() . ' ' . $browser->getVersion(); ?></span>
+							</p>
+						</div>
+						<div class="caption text-center">
+							<h5><?php echo $translate->_("Box Desc Browser"); ?></h5>
+						</div>
+					</div>
+				</div>
 			</div>
 
 		</div>
