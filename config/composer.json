@@ -1,6 +1,7 @@
 {
 	"require": {
-		"zendframework/zendframework1": "1.12.*"
+		"zendframework/zendframework1": "1.12.*",
+		"cbschuld/browser.php": "dev-master"
 	},
 	"autoload": {
 		"psr-0": {

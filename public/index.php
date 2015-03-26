@@ -10,6 +10,11 @@ $translate = new Zend_Translate(
 	)
 );
 //Zend_Debug::dump($translate);
+
+// Get browser
+// https://github.com/cbschuld/Browser.php/
+$browser = new Browser();
+//Zend_Debug::dump($browser);
 ?>
 <!doctype html>
 <html class="no-js" lang="">
@@ -133,7 +138,7 @@ $translate = new Zend_Translate(
 						<div class="img_container text-center">
 							<img src="/misc/pics/boxbg_user-agent.png" class="img-responsive" />
 							<p class="infotext">
-								<span class="inner"><?php echo $_SERVER['HTTP_USER_AGENT']; ?></span>
+								<span class="inner"><?php echo $browser->getUserAgent(); ?></span>
 							</p>
 						</div>
 						<div class="caption text-center">

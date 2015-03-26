@@ -13,4 +13,5 @@ echo ' '
 sudo /etc/init.d/apache2 restart
 
 # update composer stuff
+cd /vagrant
 sudo COMPOSER=/vagrant/config/composer.json /bin/composer.phar update
