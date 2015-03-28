@@ -31,6 +31,9 @@ $(document).ready(function() {
 
 			// operating system
 			this.setDataToBox('ib_operating-system', navigator.oscpu);
+
+			// get external ip address
+			this.updateBoxViaAjax('getExternalIp', 'ib_external-ip');
 		},
 
 		// update current viewport
@@ -48,6 +51,18 @@ $(document).ready(function() {
 		// set data to infoboxes
 		setDataToBox: function(boxId, contentString) {
 			$('#' + boxId + ' .infotext .inner').html(contentString);
+		},
+
+		// update box via ajax
+		updateBoxViaAjax: function(action, boxId) {
+			$.ajax({
+				url: "ajax.php",
+				data: {
+					act: action
+				}
+			}).done(function(data) {
+				WIMS.setDataToBox(boxId, data);
+			});
 		}
 	};
 

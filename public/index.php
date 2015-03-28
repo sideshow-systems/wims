@@ -4,9 +4,9 @@ require '../vendor/autoload.php';
 // http://framework.zend.com/manual/1.12/de/zend.translate.using.html
 $translate = new Zend_Translate(
 	array(
-	'adapter' => 'gettext',
-	'content' => '/vagrant/translation/en.mo',
-	'locale' => 'en'
+		'adapter' => 'gettext',
+		'content' => '/vagrant/translation/en.mo',
+		'locale' => 'en'
 	)
 );
 //Zend_Debug::dump($translate);
@@ -15,6 +15,11 @@ $translate = new Zend_Translate(
 // https://github.com/cbschuld/Browser.php/
 $browser = new Browser();
 //Zend_Debug::dump($browser);
+
+//Zend_Debug::dump($_SERVER);
+
+$wims = new Wims\Wims();
+
 ?>
 <!doctype html>
 <html class="no-js" lang="">
@@ -42,7 +47,6 @@ $browser = new Browser();
 		<![endif]-->
 
 		<div class="container">
-			<?php //print_r($_SERVER); ?>
 			<div class="row">
 				<div class="col-md-12">
 					<div class="page-header">
@@ -84,7 +88,7 @@ $browser = new Browser();
 						</div>
 					</div>
 				</div>
-				
+
 				<!-- Available Windowsize -->
 				<div id="ib_available-windowsize" class="infobox col-md-3 col-sm-6 col-xs-6">
 					<div class="thumbnail">
@@ -99,7 +103,7 @@ $browser = new Browser();
 						</div>
 					</div>
 				</div>
-				
+
 				<!-- Color Depth -->
 				<div id="ib_color-depth" class="infobox col-md-3 col-sm-6 col-xs-6">
 					<div class="thumbnail">
@@ -114,7 +118,7 @@ $browser = new Browser();
 						</div>
 					</div>
 				</div>
-				
+
 				<!-- Cookies Enabled -->
 				<div id="ib_cookies-enabled" class="infobox col-md-3 col-sm-6 col-xs-6">
 					<div class="thumbnail">
@@ -130,7 +134,7 @@ $browser = new Browser();
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="row">
 				<!-- User Agent -->
 				<div id="ib_user-agent" class="infobox col-md-3 col-sm-6 col-xs-6">
@@ -146,7 +150,22 @@ $browser = new Browser();
 						</div>
 					</div>
 				</div>
-				
+
+				<!-- External IP -->
+				<div id="ib_external-ip" class="infobox col-md-3 col-sm-6 col-xs-6">
+					<div class="thumbnail">
+						<div class="img_container text-center">
+							<img src="/misc/pics/boxbg_external-ip.png" class="img-responsive" />
+							<p class="infotext">
+								<span class="inner"><img src="/misc/pics/ajax-loader.gif" class="" /></span>
+							</p>
+						</div>
+						<div class="caption text-center">
+							<h5><?php echo $translate->_("Box Desc External IP"); ?></h5>
+						</div>
+					</div>
+				</div>
+
 				<!-- Operating System -->
 				<div id="ib_operating-system" class="infobox col-md-3 col-sm-6 col-xs-6">
 					<div class="thumbnail">
@@ -161,7 +180,7 @@ $browser = new Browser();
 						</div>
 					</div>
 				</div>
-				
+
 				<!-- Browser -->
 				<div id="ib_browser" class="infobox col-md-3 col-sm-6 col-xs-6">
 					<div class="thumbnail">
@@ -184,8 +203,8 @@ $browser = new Browser();
 								case Browser::BROWSER_CHROME:
 									$browserBgImage = 'chrome';
 									break;
-								
-									
+
+
 								default:
 									break;
 							}

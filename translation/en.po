@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WIMS 0.1\n"
-"POT-Creation-Date: 2015-03-25 15:21+0100\n"
-"PO-Revision-Date: 2015-03-25 19:22+0100\n"
+"POT-Creation-Date: 2015-03-28 22:12+0100\n"
+"PO-Revision-Date: 2015-03-28 22:13+0100\n"
 "Last-Translator: Florian Binder <fb@sideshow-systems.de>\n"
 "Language-Team: Florian Binder <fb@sideshow-systems.de>\n"
 "Language: en\n"
@@ -11,59 +11,66 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.7.5\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
-"X-Poedit-Basepath: /Users/florianbinder/Documents/Eclipse/workspace/Sandbox/"
-"wims/\n"
+"X-Poedit-Basepath: /Users/sideshow/Documents/sideshow-systems.de/Sites/wims\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: public\n"
 
-#: public/index.php:19 public/index.php:44
+#: public/index.php:29 public/index.php:53
 msgid "Application Name"
 msgstr "WIMS"
 
-#: public/index.php:44
+#: public/index.php:53
 msgid "Application Name Description"
 msgstr "What Is My Setup?"
 
-#: public/index.php:46
+#: public/index.php:55
 msgid "Infotext lead"
 msgstr "Infotext goes here..."
 
-#: public/index.php:57
+#: public/index.php:66
 msgid "Emailform Placeholder Text"
 msgstr "Email Address"
 
-#: public/index.php:59
+#: public/index.php:68
 msgid "Emailform Sendbutton Text"
 msgstr "Send Email"
 
-#: public/index.php:73 public/index.php:86 public/index.php:99
-#: public/index.php:112 public/index.php:140
+#: public/index.php:83 public/index.php:98 public/index.php:113
+#: public/index.php:128 public/index.php:175
 msgid "Box Desc Loading Placeholder"
 msgstr "Loading Data..."
 
-#: public/index.php:76
+#: public/index.php:87
 msgid "Box Desc Current Viewport"
 msgstr "Current Viewport"
 
-#: public/index.php:89
+#: public/index.php:102
 msgid "Box Desc Available Windowsize"
 msgstr "Available Windowsize"
 
-#: public/index.php:102
+#: public/index.php:117
 msgid "Box Desc Color Depth"
 msgstr "Color Depth"
 
-#: public/index.php:115
+#: public/index.php:132
 msgid "Box Desc Cookies Enabled"
 msgstr "Cookies Enabled"
 
-#: public/index.php:130
+#: public/index.php:149
 msgid "Box Desc User Agent"
 msgstr "User Agent"
 
-#: public/index.php:143
+#: public/index.php:164
+msgid "Box Desc External IP"
+msgstr "External IP"
+
+#: public/index.php:179
 msgid "Box Desc Operating System"
 msgstr "Operating System"
+
+#: public/index.php:218
+msgid "Box Desc Browser"
+msgstr "Browser & Version"
 
 #~ msgid "Sample String 1"
 #~ msgstr "EN 1"
