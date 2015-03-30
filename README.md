@@ -11,7 +11,7 @@ WIMS is fully [Vagrant](https://www.vagrantup.com) powered! Just clone this repo
 vagrant up
 ```
 
-Also WIMS is multi-language project. You have to use a software like [poedit](https://poedit.net) to make .mo files out of the .po files from the language directory.
+Also WIMS is a multi-language project. You have to use a software like [poedit](https://poedit.net) to make .mo files out of the .po files from the language directory.
 
 ## Technologies
 The following technologies are used in this project:
